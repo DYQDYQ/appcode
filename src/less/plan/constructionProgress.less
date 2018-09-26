@@ -1,0 +1,197 @@
+@drawerWidth:240px;
+@borderColor:#DDDEE1;
+@infordrawerWidth:100%;
+@dodgerred:#d44c4c;
+.mask{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+.buildingInfo{
+  height: calc(~"100% - 47px");
+  margin-top:12px;
+}
+.buildingclass{
+  height: calc(~"100% - 50px");
+  width:100%;
+}
+.footer{
+  height: 50px;
+  border-top: 1px solid black;
+  background-color: #FFF;
+  line-height: 49px;
+  text-align: right;
+  font-size: 26px;
+  .controller{
+    display: inline-block;
+    label{
+      padding: 0 16px;
+      display: inline-block;
+      &.active{
+        color: white;
+        background-color: #d44c4c;
+      }
+    }
+  }
+}
+.drawer{
+  position: absolute;
+  right: 0;
+  top: 47px;
+  bottom: 50px;
+  width: @drawerWidth;
+  overflow: auto;
+  background-color: white;
+  z-index: 99;
+  .drawerHead{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #d44c4c;
+    text-align: center;
+    color:#FFF;
+  }
+  .inputBox{
+    width: 100%;
+    height: 35px;
+    padding: 5px 15px;
+    background-color: #F0F0F0;
+    &+.information{
+      top: 65px;
+    }
+    input{
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      border: 1px solid @borderColor;
+    }
+  }
+}
+.drawer-enter-active, .drawer-leave-active {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  transition: transform 0.3s linear;
+}
+.drawer-enter, .drawer-leave-to{
+  -webkit-transform: translateX(@drawerWidth);
+  -moz-transform: translateX(@drawerWidth);
+  -ms-transform: translateX(@drawerWidth);
+  -o-transform: translateX(@drawerWidth);
+  transform: translateX(@drawerWidth);
+}
+
+.infordrawer{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+  width: @infordrawerWidth;
+  overflow: auto;
+  background-color: white;
+  z-index: 99;
+  .infordrawerHead{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #d44c4c;
+    text-align: center;
+    color:#FFF;
+  }
+}
+.infordrawer-enter-active, .infordrawer-leave-active {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  transition: transform 0.3s linear;
+}
+.infordrawer-enter, .infordrawer-leave-to{
+  -webkit-transform: translateX(@infordrawerWidth);
+  -moz-transform: translateX(@infordrawerWidth);
+  -ms-transform: translateX(@infordrawerWidth);
+  -o-transform: translateX(@infordrawerWidth);
+  transform: translateX(@infordrawerWidth);
+}
+
+.process-enter-active, .process-leave-active {
+  transform: translateX(0px);
+  transition: transform 0.3s linear;
+}
+.process-enter, .process-leave-to{
+  transform: translateX(100%);
+}
+.pro{
+  position: absolute;
+  right: 0;
+  top: 47px;
+  bottom: 50px;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.mint-checklist-label{
+  display: inline-block;
+}
+.information{
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  .ivu-radio-wrapper{
+    width: 100%;
+    margin-right: 0;
+  }
+  li{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid @borderColor;
+    padding-left: 12px;
+  }
+}
+//.radioOne label:after{
+//  content: "\F125";
+//  font-family: Ionicons;
+//  float: right;
+//  margin-right: 17px;
+//}
+.radio{
+  width: 200%;
+  height: 100%;
+  overflow: auto;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  >div{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+  &.active{
+    transform: translateX(-50%);
+  }
+}
+.toolBars{
+  width: 100%;
+  height: 35px;
+  background-color: #FFF;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+}

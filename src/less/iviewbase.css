@@ -1,0 +1,148 @@
+html,body{height:100%;overflow: hidden;}
+body{
+        padding-top: 20px !important;
+        background-color: rgba(124,116,121,0.5) !important;
+    }
+.ivu-picker-confirm>span{
+    color: #d44c4c !important;
+}
+.ivu-btn-error{
+    background-color: #d44c4c !important;
+    border-color: #d44c4c !important;
+}
+.ivu-table-cell{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.dp-header .dp-item.dp-right,.vux-popup-header-right{
+  color: #d44c4c !important;;
+}
+/*.weui-cell__ft{
+    text-align: left !important;
+}*/
+.vux-popup-dialog{
+    z-index: 9999 !important;
+    width: calc(35% - 1.5px) !important;
+    left: calc(65% + 1.5px) !important;
+    box-shadow:0px -1px 5px #888888;
+}
+/*.weui-cells{
+    margin-top: 0px !important;
+    line-height: 37px !important;
+}*/
+.vux-popup-picker-select{
+    text-align: left !important;
+}
+/*.weui-cells:after,.weui-cells:before{
+    border:0px solid #fff !important;
+}*/
+.ivu-form .ivu-form-item-label{
+    font-size: 17px !important;
+}
+.ivu-form-item .ivu-form-item-content, .ivu-form-item .ivu-form-item-label{
+    font-size: 17px !important;
+}
+.dp-container{
+    width: 35% !important;
+    left: 65% !important;
+}
+.weui-cell_access .weui-cell__ft:after{
+    border-color:#fff !important;
+}
+.weui-cells_radio .weui-check:checked+.weui-icon-checked:before{
+    color: #d44c4c !important;
+}
+/*.weui-cell{
+    padding: 0px !important;
+}*/
+.infoButton{
+    display: none !important;
+}
+.homeViewWrapper{
+    right: 12px !important;
+}
+.wPaint-menu-icon-name-undo div{
+    background-image: url("../img/wpaint/undo.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-redo div{
+    background-image: url("../img/wpaint/redo.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-rectangle div{
+    background-image: url("../img/wpaint/icon_rectangle.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-eclipse div{
+    background-image: url("../img/wpaint/icon_ellipse.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-text div{
+    background-image: url("../img/wpaint/icon_text.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-text div{
+    background-image: url("../img/wpaint/icon_text.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-line div{
+    background-image: url("../img/wpaint/icon_line.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-pencil div{
+    background-image: url("../img/wpaint/icon_pencil.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-cancel div{
+    background-image: url("../img/wpaint/clear.png") !important;
+    background-position: 0px 0px !important;
+}
+.wPaint-menu-icon-name-save div{
+    background-image: url("../img/wpaint/icons-menu-main-file.png") !important;
+    background-position: 0px 0px !important;
+}
+.fa-xiangqi {
+    background: url("../img/yaogan/xiangqi.png") no-repeat center center !important;
+    background-size: 100% auto !important;
+}
+.fa-question {
+    background: url("../img/yaogan/faqi.png") no-repeat center center !important;
+    background-size: 100% auto !important;
+    display: none;
+}
+.fa-goujian {
+    background: url("../img/yaogan/goujian.png") no-repeat center center !important;
+    background-size: 100% auto !important;
+}
+.fa-goujian1 {
+    background: url("../img/yaogan/goujian1.png") no-repeat center center !important;
+    background-size: 100% auto !important;
+}
+.fa-play {
+    background: url("../img/yaogan/yingc.png") no-repeat center center !important;
+    background-size: 100% auto !important;
+}
+.range-quantity{
+    background-color: #d44c4c;
+}
+.homeViewWrapper{
+    display: none;
+}
+.weui-label{
+    font-size: 14px;
+    color: #666;
+}
+.weui-switch-cp__input:checked~.weui-switch-cp__box, .weui-switch:checked{
+    border-color: #d44c4c !important;
+    background-color: #d44c4c !important;
+}
+
+.adddrawer .ivu-btn{
+    border-radius: 0px !important;
+}
+.rightdrawer .ivu-btn{
+    border-radius: 0px !important;
+}
+.ivu-btn:active{
+    box-shadow: 0px 0px 0px #dd7070 !important;
+}

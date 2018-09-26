@@ -1,0 +1,89 @@
+.table{
+  border-bottom: 1px solid #ddd;
+  width:100%;
+  .tableline{
+    height: 30px;
+    width:100%;
+    display:flex;
+    font-size:14px;
+    line-height: 30px;
+    .number{
+      width:80px;
+      color: #333;
+      padding-left:24px;
+    }
+    .dis{
+      width: calc(~'100% - 200px');
+      overflow : hidden;
+      text-overflow: ellipsis;
+      padding:0px 5px;
+      color: #333;
+    }
+    .timeend{
+      width:125px;
+      text-align:right;
+      padding-right: 25px;
+      .yuqi{
+        height: 18px;
+        vertical-align: text-top;
+      }
+    }
+  }
+  .tableline:last-child{
+    padding-left:80px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:12px;
+    div{
+      margin:0px 5px;
+    }
+    .dangqian{
+      width: 600px;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+.qboxbottom{
+  position: absolute;
+  bottom: 16px;
+  margin: 0 16px;
+  left: 0;
+  right: 0;
+}
+.qboxhead{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.qboxhead .filter{
+  width: 60px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 14px;
+  text-align: right;
+  padding-right: 14px;
+  color: #000;
+}
+.chosefilter{
+  color: #d44c4c !important;
+}
+.searchbox{
+  width: 180px !important;
+  top:4px;
+}
+.searchbox .ivu-input {
+  height: 26px;
+}
+.first{
+  color:#d81e06;
+}
+.secend{
+  color:#f18921;
+}
+.three{
+  color:#6b9b31;
+}

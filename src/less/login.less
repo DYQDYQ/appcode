@@ -1,0 +1,71 @@
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/loginBackground.jpg");
+  background-size: cover;
+  .loin-info {
+    text-align: center;
+    width: 500px;
+    position: relative;
+    margin: 8% auto 0 auto;
+    padding: 20px 10px;
+    border-radius: 5px;
+    img{
+      position: absolute;
+      top:30px;
+      left:200px;
+      z-index:30;
+
+    }
+    .info{
+      position:absolute;
+      top:80px;
+      left:0px;
+      padding: 80px 90px 12px 90px;
+      border-radius: 5px;
+      width:100%;
+      height:340px;
+      z-index:21;
+      border:2px solid #fff;
+    }
+    .infobac{
+      background-color: whitesmoke;
+      position:absolute;
+      opacity: 0.4;
+      top:80px;
+      left:0px;
+      height:340px;
+      width:100%;
+      z-index:20;
+    }
+  }
+}
+.loginBtn{
+  width:100%;
+  background-color: #D44C4C;
+  color: #fff;
+  border-color: transparent;
+  font-size: 20px;
+  &:active,&:hover{
+    background-color: #EE5C04;
+  }
+  &.ivu-btn-loading{
+    color: white;
+    border-color: #ee5c04;
+  }
+}
+.ivu-input-type{
+  input{
+    height: 52px;
+    font-size: 46px;
+  }
+}
+.clear-fix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.logininput input{
+  margin-bottom:0px !important;
+}

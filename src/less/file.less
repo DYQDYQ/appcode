@@ -1,0 +1,228 @@
+@oneLogo:-30px;
+.logos{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/logos.png") 0 0 no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.fileList{
+  text-overflow: ellipsis;
+  height:100%;
+  overflow: auto;
+  li{
+    padding-left: 12px;
+    span{
+      width: calc(~'100% - 12px');
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #DDDEE0;
+    }
+  }
+  .listbody{
+    position:relative;
+    .items{
+      border-bottom: 1px solid #dddddd;
+      .itemtime{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .checkitem{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      display: inline-block;
+      height: 100%;
+      width: 60px;
+      text-align: center;
+      line-height: 48px;
+    }
+    .showcheckitem{
+      background-color: #fff;
+      text-align: center;
+      height:0px;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-bottom: 1px solid #ddd;
+      animation:anishow 0.2s ease 0s 1;
+      animation-fill-mode: forwards;
+      div{
+        width:60px;
+        font-size:20px;
+        p{
+          font-size:10px;
+        }
+      }
+    }
+  }
+}
+@keyframes anishow{
+  0%{
+    height:0px;
+  }
+  100%{
+    height:48px;
+  }
+}
+.directory         {background-position: 0 -48px;}
+.elfinder-cwd .elfinder-droppable-active .elfinder-cwd-icon {background-position: 0 -96px;}
+.application       {background-position: 0 -144px;}
+.x-empty,
+.text              {background-position: 0 -192px;}
+.image             {background-position: 0 -240px;}
+.vnd-adobe-photoshop,
+.postscript        {background-position: 0 -288px;}
+.audio             {background-position: 0 -336px;}
+.video,
+.flash-video       {background-position: 0 -384px;}
+.rtf,
+.rtfd              {background-position: 0 -432px;}
+.pdf               {background-position: 0 -480px;}
+.msword,
+.vnd-ms-word,
+.vnd-ms-word-document-macroEnabled-12,
+.vnd-ms-word-template-macroEnabled-12 {background-position: 0 -528px;}
+.ms-excel,
+.vnd-ms-excel,
+.vnd-ms-excel-addin-macroEnabled-12,
+.vnd-ms-excel-sheet-binary-macroEnabled-12,
+.vnd-ms-excel-sheet-macroEnabled-12,
+.vnd-ms-excel-template-macroEnabled-12 {background-position: 0 -576px;}
+.vnd-ms-powerpoint,
+.vnd-ms-powerpoint-addin-macroEnabled-12,
+.vnd-ms-powerpoint-presentation-macroEnabled-12,
+.vnd-ms-powerpoint-slide-macroEnabled-12,
+.vnd-ms-powerpoint-slideshow-macroEnabled-12,
+.vnd-ms-powerpoint-template-macroEnabled-12 {background-position: 0 -624px;}
+.vnd-ms-office,
+.vnd-oasis-opendocument-chart,
+.vnd-oasis-opendocument-database,
+.vnd-oasis-opendocument-formula,
+.vnd-oasis-opendocument-graphics,
+.vnd-oasis-opendocument-graphics-template,
+.vnd-oasis-opendocument-image,
+.vnd-oasis-opendocument-presentation,
+.vnd-oasis-opendocument-presentation-template,
+.vnd-oasis-opendocument-spreadsheet,
+.vnd-oasis-opendocument-spreadsheet-template,
+.vnd-oasis-opendocument-text,
+.vnd-oasis-opendocument-text-master,
+.vnd-oasis-opendocument-text-template,
+.vnd-oasis-opendocument-text-web,
+.vnd-openofficeorg-extension,
+.vnd-openxmlformats-officedocument-presentationml-presentation,
+.vnd-openxmlformats-officedocument-presentationml-slide,
+.vnd-openxmlformats-officedocument-presentationml-slideshow,
+.vnd-openxmlformats-officedocument-presentationml-template,
+.vnd-openxmlformats-officedocument-spreadsheetml-sheet,
+.vnd-openxmlformats-officedocument-spreadsheetml-template,
+.vnd-openxmlformats-officedocument-wordprocessingml-document,
+.vnd-openxmlformats-officedocument-wordprocessingml-template {background-position: 0 -672px;}
+.html              {background-position: 0 -720px;}
+.css               {background-position: 0 -768px;}
+.javascript,
+.x-javascript      {background-position: 0 -816px;}
+.x-perl            {background-position: 0 -864px;}
+.x-python          {background-position: 0 -912px;}
+.x-ruby            {background-position: 0 -960px;}
+.x-sh,
+.x-shellscript     {background-position: 0 -1008px;}
+.x-c,
+.x-csrc,
+.x-chdr,
+.x-c--,
+.x-c--src,
+.x-c--hdr          {background-position: 0 -1056px;}
+.x-java,
+.x-java-source     {background-position: 0 -1104px;}
+.x-php             {background-position: 0 -1152px;}
+.xml               {background-position: 0 -1200px;}
+.zip,
+.x-zip             {background-position: 0 -1248px;}
+.x-xz              {background-position: 0 -1296px;}
+.x-7z-compressed   {background-position: 0 -1344px;}
+.x-gzip            {background-position: 0 -1392px;}
+.x-tar             {background-position: 0 -1440px;}
+.x-bzip,
+.x-bzip2           {background-position: 0 -1488px;}
+.x-rar,
+.x-rar-compressed  {background-position: 0 -1536px;}
+.x-shockwave-flash {background-position: 0 -1584px;}
+.group             {background-position: 0 -1632px;}
+.dwg               {background-position: 0 -1680px;}
+.exe              {background-position: 0 -1728px;}
+.rvt               {background-position: 0 -1920px;}
+.rfa               {background-position: 0 -1872px;}
+.mpp               {background-position: 0 -1776px;}
+.listActive{
+  background-color: lightgoldenrodyellow;
+}
+.filebox{
+  height: 100%;
+  overflow: hidden;
+  min-width: 250px;
+  border-right: 1px solid rgb(221, 221, 221);
+}
+.filehead{
+  font-size: 30px;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  .filebac{
+    display: inline-block;
+    .bacicon{
+      font-size: 30px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+    }
+  }
+}
+.filesearch{
+  width: 200px;
+  float: right;
+  height:30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 6px 6px 0px 0px;
+  .ivu-input{
+    height:25px;
+  }
+}
+.fileadd{
+  float:right;
+  height:48px;
+  line-height:48px;
+  margin-right: 20px;
+  .addicon{
+    font-size: 30px;
+  }
+}
+.filebox1{
+  height: 100%;
+  overflow: auto;
+  background-color: #f5f5f5;
+  img{
+    width: 100%;
+    height: 100%;
+    z-index:2
+  }
+}
+.maindrawer {
+    position: absolute;
+    right: 0;
+    top: 47px;
+    width: calc(100% - 70px);
+    overflow: auto;
+    background-color: #fff;
+    z-index: 999;
+    height: calc(100% - 47px);
+}

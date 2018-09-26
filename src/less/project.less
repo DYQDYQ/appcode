@@ -1,0 +1,73 @@
+.head{
+  font-size: 18px;
+  padding: 6px 18px;
+}
+.calendar{
+  width: 100%;
+  //display: -webkit-flex;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap:wrap;
+  //justify-content: flex-start;
+  //align-items: flex-start;
+  height: calc(~"100vh - 98px");
+  overflow: hidden;
+  .day{
+    width: percentage(1/7);
+    height: percentage(1/7);
+    border: 1px solid #DDDEE1;
+    display: inline-block;
+    float: left;
+  }
+  .calendar-table{
+    width:100%;
+    transition: all 0.3s ease;
+    >div{
+      height: 768px;
+      width:100%;
+    }
+  }
+}
+.week{
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 24px;
+  .day{
+    width: percentage(1/7);
+    height: 24px;
+    border: 1px solid #DDDEE1;
+    text-align: center;
+  }
+}
+.detail{
+  li{
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.right{
+  background-color: #47C4C6;
+  height: 100%;
+  text-align: center;
+  >span{
+    margin-top: 67px;
+    display: block;
+    color: white;
+    font-size: 16px;
+  }
+  .today{
+    color: white;
+    font-size: 24px;
+    margin: 36px 0;
+  }
+  .future{
+    color: white;
+    font-size: 12px;
+    margin: 18px 0;
+  }
+}

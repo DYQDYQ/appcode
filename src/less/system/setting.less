@@ -1,0 +1,31 @@
+.user{
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  .avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+    &+span{
+      vertical-align: middle;
+      font-size: 20px;
+      margin-left: 1rem;
+    }
+  }
+}
+.operation{
+  background-color: white;
+  padding: 0 15px;
+  li{
+    padding: 6px 0;
+    font-size: 15px;
+    line-height: 30px;
+    &:not(:last-child){
+      border-bottom: 1px solid #dddee1;
+    }
+    .after{
+      float: right;
+    }
+  }
+}

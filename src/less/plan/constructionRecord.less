@@ -1,0 +1,225 @@
+.form{
+  margin: 2px auto;
+  .submitbutton{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #d54c4c;
+    border-color: #d54c4c;
+    font-size:17px;
+  }
+}
+.addButton{
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #dddee0;
+  font-size: 30px;
+  color: #DDDEE0;
+}
+.span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  button{
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+}
+.rightBox{
+  position: absolute;
+  width: 60vw;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 800;
+  .object{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #f8f8f9;
+    padding-left: 16px;
+    z-index: 800;
+    li{
+      line-height: 30px;
+      font-size: 16px;
+      width: 100%;
+      border-bottom: 1px solid #dddee1;
+      &:first-child{
+        overflow: auto;
+        white-space: nowrap;
+      }
+      &:not(:first-child){
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &+.mask{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 700;
+  }
+}
+.fade-enter-active, .fade-leave-active {
+  opacity: .6;
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.rightIn-enter-active, .rightIn-leave-active {
+  transform: translateX(0);
+  transition: all .5s
+}
+.rightIn-enter, .rightIn-leave-to {
+  transform: translateX(60vw);
+}
+.ac input{
+  margin-bottom: 0!important;
+}
+.addtable{
+  width: 100%;
+  margin-bottom:17px;
+}
+.tablehead{
+  height: 40px;
+  border:1px solid #e9eaec;
+  background-color: #f8f8f9;
+  div{
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+.tablecontent{
+  max-height: 300px;
+  width: 100%;
+  font-size:17px;
+  overflow: hidden;
+}
+.tableline{
+  display:flex;
+  border-bottom:1px solid #e9eaec;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  .linecontent{
+    line-height: 40px;
+    height: 40px;
+    text-align: left;
+    width:calc(~"(100% - 230px) / 2");
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size:14px;
+  }
+  .linejindu{
+    line-height: 40px;
+    height: 40px;
+    text-align: left;
+    width:100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size:14px;
+  }
+  .del{
+    width: 30px;
+    text-align: right;
+    display: inline-block;
+    font-size: 22px;
+    color:#d44c4c;
+  }
+  .percent{
+    width: 100px;
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+.tableline:last-child{
+  border-bottom:0px solid #e9eaec;
+}
+.nodata{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border:1px solid #d7dde4;
+}
+.rightBox{
+  &:first-child{
+    height: calc(~"100% - 35px");
+  }
+  &:nth-child(2){
+    height: 35px;
+    button{
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+}
+.showlog{
+  width:100%;
+  color:#ed3f14;
+  height:24px;
+  line-height:24px;
+  font-size: 16px;
+  visibility: hidden;
+  margin-bottom:10px;
+}
+.showlogbu{
+  visibility: visible;
+}
+.errorline{
+  border:1px solid #ed3f14;
+}
+.chosehead{
+  margin-bottom:5px !important;
+}
+.choseline{
+  color: #999;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  float: left;
+  width: calc(~"100% - 30px");
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+
+}
+.shopline{
+  float: left !important;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+.qrline{
+  background-color: #fff;
+  border-color:#dddee1;
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  text-align: left;
+  margin-right: 5px;
+  i{
+    font-size: 24px;
+  }
+}

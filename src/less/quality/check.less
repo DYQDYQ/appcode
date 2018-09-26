@@ -1,0 +1,70 @@
+//.ivu-row,.main .ivu-col{
+//  height: 100%;
+//}
+.sizer{
+  padding: 2px 2px;
+  label{
+    font-size:20px;
+  }
+}
+h3{
+  line-height: 32px;
+}
+ul{
+  margin-top: 16px;
+  width: 100%;
+  li{
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 26px;
+    padding: 6px 0;
+    height:40px;
+    >span{
+      width: calc(~'100% - 54px');
+      text-overflow: ellipsis;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    button{
+      float: right;
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #dddee1;
+    }
+    .after{
+      float: right;
+    }
+  }
+}
+.plus{
+  padding: 24px 6px 6px;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: rgba(255, 255, 255,0.7);
+  line-height: 22px;
+  font-size: 14px;
+  border: 1px solid #dddee0;
+  z-index: 900;
+  tr{
+    &:not(:last-child){
+      border-bottom: 1px solid #DDDEE0;
+    }
+    td{
+      padding:0 8px;
+    }
+  }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+  opacity: 0
+}
+.tt{
+
+}

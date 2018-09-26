@@ -1,0 +1,94 @@
+#a {
+  position: static;
+}
+.toolBar {
+  width: 100%;
+  height: 35px;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  line-height: 35px;
+}
+.menuBar {
+  position: absolute!important;
+  left: 0;
+  top: 35px;
+  bottom: 0;
+  width: 200px;
+  padding: 12px 28px;
+  background-color: #2A3542;
+  color: #aeb2b7;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menuBar.hide {
+  width: 50px;
+}
+.menuBar.hide + .main {
+  left: 50px ;
+}
+.menuBar .menu {
+  padding: 6px;
+}
+.menuBar .array {
+  float: right;
+  margin-right: 18px;
+  margin-top: 4px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menuBar .array.arrayDown {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.menuBar .menu.activeMenu {
+  background-color: #35404D;
+  border-radius: 5px;
+}
+.menuBar .menu.activeMenu > span {
+  color: #FFF;
+}
+.menuBar .menu.activeMenu li {
+  margin-left: 16px;
+}
+.main {
+  position: absolute;
+  top: 35px;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+li a {
+  display: block;
+  font-size: 16px;
+  line-height: 35px;
+  height: 35px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #aeb2b7;
+  text-decoration: none;
+}
+li a.router-link-active {
+  color: #FF6C60;
+}
